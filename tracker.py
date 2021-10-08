@@ -13,7 +13,7 @@ BUFFER_SIZE = 1024
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 s.connect((TCP_IP, TCP_PORT))
-
+starting_height = 1 # starting height in meters
 pos_scale = 100
 rot_scale = 1
 threshold = 0.0005
@@ -38,10 +38,7 @@ if pose:
     zeroX = data.translation.x
     zeroY = data.translation.y 
     zeroZ = data.translation.z
-    print (zeroY)
-    lastZeroX = zeroX
-    lastZeroY = zeroY
-    lastZeroZ = zeroZ
+
 
 try:
     while True:
@@ -55,17 +52,14 @@ try:
             data = pose.get_pose_data()
       #      if data.translation.z
          
-            data.translation.y += 0.92 + 0.5
-            delta = abs(data.translation.x-lastZeroX) + abs(data.translation.y-lastZeroY) + abs(data.translation.z-lastZeroZ)
+            data.translation.y += starting_height
          #   print ("x : ", - data.translation.z, " y: ", data.translation.x , "z: " , data.translation.y, " and delta is ", delta)
             s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
             MESSAGE = '{{"MHTrack": [{{"Type":"CameraAnimation"}},{{"Location":[{},{},{}],"Rotation":[{:.4f},{:.4f},{:.4f},{:.4f}],"Scale":[1,1,1]}}]}}'.format((pos_scale*(-data.translation.z-zeroZ)),(pos_scale*(data.translation.x-zeroX)),(pos_scale*(data.translation.y-zeroY)), rot_scale*data.rotation.z, rot_scale*-data.rotation.x, rot_scale*-data.rotation.y,rot_scale*data.rotation.w)
             s.connect((TCP_IP, TCP_PORT))
             s.send(MESSAGE.encode('utf-8'))
             s.close()
-            lastZeroX = data.translation.x
-            lastZeroY = data.translation.y
-            lastZeroZ = data.translation.z
+    
 finally:
     pipe.stop()
 
