@@ -8,7 +8,8 @@ Simple script that sends data into Unreal Engine through the JSON liveLink plugi
 2. do "pip install pyrealsense2" in CMD
 3. And run with "py tracker.py"
 4. Create a c++ project, and install JSON-Livelink Enhanced plugin into your project - https://github.com/clintonman/JSONLiveLink/tree/enhanced When its built, it can be copied to other non c++ projects in the same version5. 
-5. Configure livelink to recieve on localhost.
+5. OR download precompiled plugin from this repository. Current versions are 4.26.2 and 4.27.0
+6. Configure livelink to recieve on localhost.
 
 ![image](https://user-images.githubusercontent.com/23232326/136547962-7b521660-e3d3-4b53-8ab5-6809187c0366.png)
 
