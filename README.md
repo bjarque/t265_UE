@@ -1,5 +1,5 @@
 # t265_UE
-Intel Realsense t265 into Unreal Engine. Windows only!
+Intel Realsense t265 into Unreal Engine. Windows only, and Livelink plugin is 4.26.2 only at the moment. Might recompile it for different versions if you want.
 
 Simple script that sends data into Unreal Engine through the JSON liveLink plugin. Can be configured to send to another IP as well.
 
@@ -10,7 +10,7 @@ Simple script that sends data into Unreal Engine through the JSON liveLink plugi
 
 ![image](https://user-images.githubusercontent.com/23232326/136547962-7b521660-e3d3-4b53-8ab5-6809187c0366.png)
 
-4. Install python 3.7.9, and remember too add it to PaTH
+4. Install python 3.7.9, and remember too add it to PATH https://www.python.org/ftp/python/3.7.9/python-3.7.9-amd64.exe
 5. do "pip install pyrealsense2" in CMD
 6. And run with "py tracker.py"
 
