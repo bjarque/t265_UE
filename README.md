@@ -5,7 +5,7 @@ Simple script that sends data into Unreal Engine through the JSON liveLink plugi
 
 # Instructions
 1. Install the SDK from Intel https://www.intelrealsense.com/sdk-2/
-2. Install JSON-Livelink plugin into your project - https://github.com/ue4plugins/JSONLiveLink
+2. Install JSON-Livelink Enhanced plugin into your project - https://github.com/clintonman/JSONLiveLink/tree/enhanced
 3. Configure livelink to recieve on localhost.
 
 ![image](https://user-images.githubusercontent.com/23232326/136547962-7b521660-e3d3-4b53-8ab5-6809187c0366.png)
