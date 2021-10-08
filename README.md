@@ -1,12 +1,13 @@
 # t265_UE
 Intel Realsense t265 into Unreal Engine. Windows only, and Livelink plugin is 4.26.2 only at the moment. Might recompile it for different versions if you want.
 
-Simple script that sends data into Unreal Engine through the JSON liveLink plugin. Can be configured to send to another IP as well.
+Simple script that sends data into Unreal Engine through the JSON liveLink plugin. This will be updated later, for a complete working instruction. The python script works, just need to make instructions for installing the python wrapper for realsense, and how to build the plugin.
 
 # Instructions
 1. Install the SDK from Intel https://www.intelrealsense.com/sdk-2/
 2. Install JSON-Livelink Enhanced plugin into your project - https://github.com/clintonman/JSONLiveLink/tree/enhanced
-3. Configure livelink to recieve on localhost.
+3. 
+4. Configure livelink to recieve on localhost.
 
 ![image](https://user-images.githubusercontent.com/23232326/136547962-7b521660-e3d3-4b53-8ab5-6809187c0366.png)
 
