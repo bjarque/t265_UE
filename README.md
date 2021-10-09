@@ -1,7 +1,7 @@
 # t265_UE
-Intel Realsense t265 into Unreal Engine. Works with both location and rotation. Windows only.
+Intel Realsense t265 into Unreal Engine. Windows only.
 
-Simple script that sends data into Unreal Engine through the JSON liveLink plugin.
+Simple script that sends data into Unreal Engine through the JSON liveLink plugin. Works with both location and rotation. 
 
 # Instructions
 1. Install python 3.7.9, and remember too add it to PATH https://www.python.org/ftp/python/3.7.9/python-3.7.9-amd64.exe
