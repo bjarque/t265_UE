@@ -1,5 +1,5 @@
 # t265_UE
-Intel Realsense t265 into Unreal Engine. Windows only.
+Intel Realsense t265 into Unreal Engine. Works with both location and rotation. Windows only.
 
 Simple script that sends data into Unreal Engine through the JSON liveLink plugin.
 
