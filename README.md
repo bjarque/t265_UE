@@ -12,7 +12,7 @@ Simple script that sends data into Unreal Engine through the JSON liveLink plugi
 
 ![image](https://user-images.githubusercontent.com/23232326/136547962-7b521660-e3d3-4b53-8ab5-6809187c0366.png)
 
-6. Run script from repo with the command "py tracker.py", after you start it, it should show MHtrack in Livelink controller window. You can optinally add the destination ip as  first argument to the command. (ex: py tracker.py 10.0.0.2)
+6. Run script from repo with the command "py tracker.py", after you start it, it should show MHtrack in Livelink controller window. You can optinally add destination ips as   arguments to the command. (ex: "py tracker.py 127.0.0.1 10.0.0.2", would send to 2 destinations)
 
 7. Add livelink component to your camera
 
