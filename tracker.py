@@ -1,13 +1,17 @@
 import socket
 import json
-
+import sys
 import pyrealsense2 as rs
 
 pipe = rs.pipeline()
 
 cfg = rs.config()
 cfg.enable_stream(rs.stream.pose)
-TCP_IP = '127.0.0.1'
+try:
+    TCP_IP = sys.argv[1]
+except IndexError:
+     TCP_IP = "127.0.0.1"
+
 TCP_PORT = 54321
 BUFFER_SIZE = 1024
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
